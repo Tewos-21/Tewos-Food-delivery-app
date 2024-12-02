@@ -1,0 +1,111 @@
+.footer {
+    background-color: #222121;
+    color: #fff;
+    padding: 40px 6vw; /* Reduced padding for compactness */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px; /* Reduced gap for a tighter layout */
+}
+
+.footer-content-left, 
+.footer-content-center, 
+.footer-content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px; /* Reduced gap between items */
+}
+
+.footer-content-left img {
+    width: 120px; /* Smaller logo size */
+    margin-bottom: 10px;
+}
+
+.footer-content-left p {
+    font-size: 14px; /* Reduced font size for text */
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.footer-social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.footer-social-icons img {
+    width: 25px; /* Smaller social icons */
+    height: 25px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-social-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+    font-size: 18px; /* Slightly smaller headings */
+    color: #ff5722;
+    margin-bottom: 15px;
+}
+
+.footer-content-center ul,
+.footer-content-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content-center ul li,
+.footer-content-right ul li {
+    margin-bottom: 8px; /* Reduced spacing between list items */
+    font-size: 14px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-content-center ul li:hover,
+.footer-content-right ul li:hover {
+    color: #ff5722;
+}
+
+.footer hr {
+    margin: 15px 0; /* Reduced margin for a tighter look */
+    border: none;
+    height: 1px;
+    background-color: #333;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 12px; /* Smaller font for copyright text */
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer-copyright{
+        text-align: center;
+    }
+}

@@ -1,0 +1,158 @@
+.navbar {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff; /* Ensures visibility against background */
+ 
+}
+
+/* Logo Styling */
+.navbar .logo {
+  width: 150px;
+}
+
+/* Menu Styling */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #49557e;
+  font-size: 18px;
+  margin: 0; /* Removes default list margin */
+}
+
+/* Navbar-right Styling */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-right img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar-right img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.navbar-search-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 10px;
+  height: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  border: 2px solid #1e293b; /* Matches background for a clean look */
+}
+
+/* Button Styling */
+button {
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, #f39c12, #f59e0b);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Link */
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets and Small Laptops) */
+@media (max-width: 1050px) {
+  .navbar .logo {
+    width: 140px;
+  }
+  .navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .navbar-right {
+    gap: 20px;
+  }
+  .navbar-right img {
+    width: 20px;
+  }
+  .navbar-right button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Small Screens (Mobile Devices) */
+@media (max-width: 750px) {
+  .navbar-menu {
+    display: none; /* Hides menu items */
+  }
+
+  .navbar {
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  /* Mobile Toggle Button */
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-right button {
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Additional Mobile-Friendly Features */
+@media (max-width: 500px) {
+  .navbar .logo {
+    width: 120px;
+  }
+  .navbar-right img {
+    width: 18px;
+  }
+  .navbar-right button {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+}

@@ -1,0 +1,55 @@
+/* AppDownload container styling */
+.app-download {
+    background-color: #f8f8f8; /* Light background for contrast */
+    padding: 50px 10vw; /* Generous padding for spacing */
+    text-align: center; /* Center-align the content */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    margin-top: 50px; /* Spacing from the previous section */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Text Styling */
+.app-download p {
+    font-size: 1.5rem; /* Slightly larger, professional font size */
+    font-weight: 500; /* Semi-bold for emphasis */
+     /* Dark color for readability */
+    margin-bottom: 30px; /* Space below text */
+    line-height: 1.6; /* Improved text spacing */
+}
+
+/* Platforms Section Styling */
+.app-download-platforms {
+    display: flex;
+    justify-content: center; /* Align icons in the center */
+    gap: max(2vw,10px); /* Space between the platform icons */
+}
+
+/* Store Icons Styling */
+.app-download-platforms img {
+    width: 160px; /* Standard width for app store buttons */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    border-radius: 10px; /* Rounded edges for a modern look */
+}
+
+.app-download-platforms img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Highlight on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-download {
+        padding: 30px 5vw; /* Reduced padding on smaller screens */
+    }
+
+    .app-download p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .app-download-platforms img {
+        width: 140px; /* Adjust icon size for smaller screens */
+    }
+}
