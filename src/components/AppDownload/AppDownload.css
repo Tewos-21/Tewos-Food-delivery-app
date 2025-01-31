@@ -13,7 +13,7 @@
 .app-download p {
     font-size: 1.5rem; /* Slightly larger, professional font size */
     font-weight: 500; /* Semi-bold for emphasis */
-     /* Dark color for readability */
+    color: #333; /* Dark color for readability */
     margin-bottom: 30px; /* Space below text */
     line-height: 1.6; /* Improved text spacing */
 }

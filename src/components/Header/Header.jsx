@@ -1,8 +1,14 @@
 import React from 'react'
 import './Header.css'
+import { useEffect } from 'react';
 const Header = () => {
+
+   useEffect(() => {
+                window.scrollTo(0, 0); // Scroll to the top of the page on mount
+              }, []);
+        
   return (
-    <div className="header">
+    <div className="header" id='header'>
         <div className="header-contents">
 
             <h2>Order you favourite food here</h2>

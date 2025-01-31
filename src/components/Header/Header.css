@@ -22,7 +22,7 @@
     color: white;
     letter-spacing: 1px;
     background: linear-gradient(to right, white, #fbbf24);
-    -webkit-background-clip: text;
+    
     -webkit-text-fill-color: transparent;
   }
   
